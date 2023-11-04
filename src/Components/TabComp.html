@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Component</title>
+    <link href="../../dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-neutral-1000 w-screen h-screen mx-auto flex flex-col items-center tab:w-full px-4 tab:px-0 mb-8 font-inter">
+    
+    <h1 class="text-neutral-50 text-4xl text-center font-medium py-4">Tab Component</h1>
+
+    <div class="flex w-post-xl h-14.5 mx-20 gap-40 mt-5 border-neutral-700 border-b justify-center items-center">
+        <div class="flex flex-col items-center">
+            <input class="hidden peer" type="radio" id="for_you" name="feed_type" checked>
+            <label class="font-inter text-neutral-400 font-medium peer-checked:bg-transparent peer-checked:pb-4 peer-checked:text-neutral-50 pb-3" for="for_you">For You</label>
+            <div class="h-1 w-14 hidden peer-checked:block bg-twitter-blue rounded-3xl"></div>
+        </div>
+
+        
+
+        <div class="flex flex-col items-center">
+            <input class="hidden peer" type="radio" id="following" name="feed_type">
+            <label class="font-inter text-neutral-400 font-medium peer-checked:bg-transparent peer-checked:pb-4 peer-checked:text-neutral-50 pb-3" for="following">Following</label>
+            <div class="h-1 w-17.25 hidden peer-checked:block bg-twitter-blue rounded-3xl"></div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

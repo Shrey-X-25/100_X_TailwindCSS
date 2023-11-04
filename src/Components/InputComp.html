@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Components</title>
+    <link href="../../dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-neutral-1000 w-screen h-screen flex flex-col items-center mx-auto tab:w-full px-4 tab:px-0 mb-8 font-inter">
+    
+    <h1 class="text-neutral-50 text-4xl text-center font-medium py-4">Input Components</h1>
+
+    <!-- Not Working - Contact Kishan -->
+<fieldset class="border border-neutral-700 p-4 w-6/12">
+
+    <legend class="text-neutral-50 font-medium text-2xl p-4 mobile:text-left mobile:ml-6 px-2 text-center"><h2>Normal Input</h2></legend>
+
+    <div class="w-full mobile:w-106 border border-neutral-500 rounded relative focus-within:border-twitter-blue transition-all duration-150">
+
+        <input type="text" placeholder="Label" id="normalInput" class="peer flex w-almost-md px-3 py-4 items-center bg-transparent 
+        text-xl outline-none font-normal text-neutral-50 placeholder-neutral-500 peer/normalInput" required>
+
+        <label for="normalInput" class="text-xxs text-neutral-500 px-1 absolute left-2 top-2.5-
+         bg-neutral-1000 peer-focus:text-twitter-blue transition-all duration-150">Label</label>
+
+    </div>
+
+</fieldset>
+
+<fieldset class="border border-neutral-700 p-4 mt-8 w-6/12">
+
+    <legend class="text-neutral-50 font-medium text-2xl p-4 mobile:text-left mobile:ml-6 px-2 text-center"><h2>Search Input</h2></legend>
+
+    <div class="w-full mobile:w-87 flex items-center gap-3.5 px-4 py-2 border border-neutral-500 rounded-full relative group focus-within:border-twitter-blue transition-all duration-150">
+
+        <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" class="fill-neutral-500 group-focus-within:fill-twitter-blue transition-all duration-150">
+              <path d="M16.0446 15.2054L13.1471 12.3079C14.1961 11.065 14.8334 9.46109 14.8334 7.70834C14.8334 3.77375 11.643 0.583336 7.70837 0.583336C3.77379 0.583336 0.583374 3.77375 0.583374 7.70834C0.583374 11.6429 3.77379 14.8333 7.70837 14.8333C9.46192 14.8333 11.065 14.1968 12.3064 13.1471L15.2039 16.0446C15.3202 16.1602 15.473 16.2188 15.6235 16.2188C15.7739 16.2188 15.9282 16.161 16.043 16.0446C16.2766 15.8126 16.2766 15.4374 16.0446 15.2054ZM1.77087 7.70834C1.77087 4.43479 4.43483 1.77084 7.70837 1.77084C10.9819 1.77084 13.6459 4.43479 13.6459 7.70834C13.6459 10.9819 10.9819 13.6458 7.70837 13.6458C4.43483 13.6458 1.77087 10.9819 1.77087 7.70834Z"></path>
+            </svg>
+          </span>
+
+        <input placeholder="Search Twitter" id="searchInput" type="text" class="w-full flex text-base outline-none bg-transparent font-normal text-neutral-50 placeholder-neutral-500" required="">
+
+    </div>
+</fieldset>
+
+<fieldset class="border border-neutral-700 p-4 mt-8 w-6/12">
+
+    <legend class="text-neutral-50 font-medium text-2xl p-4 mobile:text-left motion-safe:ml-6 px-2 text-center">Tweet Input</legend>
+
+    <div class="w-full mobile:w-120 h-max flex gap-3">
+
+        <img src="https://shorturl.at/apDF3" alt="Avatar" class="rounded-full w-9 h-9">
+        <input placeholder="What's happening?" id="tweetText" type="text" class="w-full flex text-xl outline-none bg-transparent font-normal 
+        text-neutral-50 placeholder-neutral-500 caret-twitter-blue" required="">
+
+    </div>
+
+</fieldset>
+
+</body>
+</html>
